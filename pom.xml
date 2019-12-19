@@ -33,7 +33,7 @@
                     <parallel>methods</parallel>
                     <threadCount>5</threadCount>
                     <suiteXmlFiles>
-                        <suiteXmlFile>src\test\resources\testing.xml</suiteXmlFile>
+                        <suiteXmlFile>src\test\resources\testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
 <!--                    <properties>
                         <property>
