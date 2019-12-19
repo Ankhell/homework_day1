@@ -7,8 +7,14 @@ public class Main {
     public static String intToHex(long input_number){
         return  Long.toHexString(input_number);
     }
-    public static String BinToHex(String input_hexNumber){
-        return  Long.toHexString(Long.parseLong(input_hexNumber,2));
+    public static String binToHex(String input_hexNumber) throws NumberFormatException{
+//        Ну раз уж у нас есть функционал проверки корректности входных данных, то почему бы и нет?..
+        try{
+            return Long.toHexString(Long.parseLong(input_hexNumber, 2));
+        }
+        catch (NumberFormatException error){
+            throw new NumberFormatException("Входящая строка не является двоичным числом");
+        }
     }
 
     public static boolean isNumber(String input_string){

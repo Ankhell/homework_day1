@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1" verbose="1" >
+    <test name="conversionTests" >
+        <classes>
+            <class name="ru.ankhell.TestMain" />
+            <methods>
+                <include name="testIntToBin"/>
+                <include name="intToHex"/>
+                <include name="testIntToHex"/>
+            </methods>
+        </classes>
+    </test>
+
+    <test name="ioTests" >
+        <classes>
+            <class name="ru.ankhell.TestMain" />
+            <methods>
+                <include name="incorrectInputBinToHex"/>
+                <include name="isNumPositiveTest"/>
+                <include name="isNumNegativeTest"/>
+            </methods>
+        </classes>
+    </test>
+</suite>
